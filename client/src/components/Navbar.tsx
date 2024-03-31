@@ -1,4 +1,3 @@
-import { IoIosAddCircle } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
@@ -59,10 +58,12 @@ export const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">
-          <IoIosAddCircle />
-          Post Job
-        </a>
+        <Link to="/login" className="btn btn-active btn-neutral">
+          Login
+        </Link>
+        <Link to="/signup" className="btn m-3 btn-active btn-neutral">
+          Signup
+        </Link>
       </div>
     </div>
   );
